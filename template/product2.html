@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>หน้าเว็บของฉัน</title>
+    <style>
+        body {
+            background-color: #f5deb3;
+        }
+
+        #header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card {
+            display: inline-block;
+            margin: 10px;
+            width: 300px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="data:image/jpeg;base64,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AUhVI8t8yIuHKW17bVKZpgVKNZKTFTpp1Ki5XKnBAYH606OKS5yFXOSc4HU9T656KA9QIw1RDbPQ4hZ2xBNJXuGoOfBHouDSJ80P2ETe5K4tQp2tvbVHCXClkNFshw5dsDTj0jeW4ifNIznAz5+MYbrmzcPduGXTi4rBA9x/hwE0Nioevd1b9es3uNWtS7rGnTpB1p2wTvPoCVKyhtYyDqYKq7emXzESfJ9KAlE31S1FQMrm2qqXwQUrU3QBx5EMM+ozFTuLjseILUQi4qvRo4AOC7p2bODj4pALZ8Mzos+S/JqjWFrWt6tzRqUlRK1sSiozOgeknZ41FVwzLvjHhNPl9CanDyjXFRqYw9OojinQBTBZGKgAjoNzOixHya53UdxZ1bDsa3vg1m0jQ2gqawcPrxp049M2uJ8LrvccQak9VDoolVXKpWwneTVjfYEbHYmXqMSfJqqWFEe/LJ6dF0pC1ddJVhoOpcIxI2br16y1xEsiaREShERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERED/2Q=="
+                    alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Taoหรอย
+            </a>
+        </div>
+    </nav>
+</header>
+
+<body class="p-3 mb-2 bg-warning ">
+    <!-- <div id="header" style="width: 300px; height: 300px; border: 1px solid black;">
+        <img src="https://scontent.fbkk5-5.fna.fbcdn.net/v/t39.30808-6/244208405_395202378977724_3017888182559757518_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeFNg7_BFDWvprZW_VPCQyOmTqUeJMIWDRZOpR4kwhYNFodng9UrWDS0GXyqepIAobbC_nou8dkOC1tkveGMWVYY&_nc_ohc=fwbMmteD_-EAX9-RafH&_nc_ht=scontent.fbkk5-5.fna&oh=00_AfDn088RT9G3TjLJJu6ylHGlMLsDW31Q34ndSlF7KWCiWg&oe=64779980"
+            alt="Image description" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div class="container">
+        <div id="content" class="container">
+            <div class="card">
+                <p>Name: ชาเขียวแซบบๆน้องๆ🥹🥹🥹</p>
+                <p>Type: น้ำชา</p>
+                <p>Price: 1,000,000 $$</p>
+            </div>
+        </div>
+
+    </div>
+    <div> -->
+    <div class="card" style="width: 18rem;">
+        <!-- <a href="./product1.html"> -->
+        <img src="https://static.wixstatic.com/media/fbcf20_63a5145c8aaf403f95128c89c9c11c01~mv2.jpg/v1/crop/x_0,y_936,w_3541,h_3478/fill/w_858,h_840,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fbcf20_63a5145c8aaf403f95128c89c9c11c01~mv2.jpg"
+            class="card-img-top" alt="...">
+    </div>
+    <div>
+        <h3>name : <span> น้ำเพิ่มพลังสู้แดด </span></h3>
+        <h3>type : <span> พลังใบ </span></h3>
+        <h3>price : <span> 50.00 $ </span></h3><!-- </a> -->
+    </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <a href="/home">Back..</a>
+</body>
+
+</html>
